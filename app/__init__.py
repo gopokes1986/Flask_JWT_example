@@ -15,4 +15,4 @@ app = create_app()
 
 from app.JWT_authentication_BP import JWT_authentication_BP
 
-app.register_blueprint(JWT_authentication_BP, url_prefix="/JWT_auth")
+app.register_blueprint(JWT_authentication_BP, url_prefix="/jwt_auth")

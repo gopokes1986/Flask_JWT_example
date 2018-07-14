@@ -2,15 +2,8 @@ __project__ = "Flask_JWT_example"
 __date__ = "2018-07-14"
 __author__ = "Daeheon (Danny) Oh"
 
-from flask import render_template, jsonify
-from . import JWT_authentication_BP
-
-
-@JWT_authentication_BP.route('/')
-def test():
-    return jsonify({'fruit': 'apple'})
-
 from flask_restful import Resource
+
 
 class UserRegistration(Resource):
     def post(self):
@@ -43,10 +36,3 @@ class AllUsers(Resource):
 
     def delete(self):
         return {'message': 'Delete all users'}
-
-
-class SecretResource(Resource):
-    def get(self):
-        return {
-            'answer': 42
-        }
