@@ -8,4 +8,4 @@ from . import JWT_authentication_BP
 
 @JWT_authentication_BP.route('/')
 def test():
-    return jsonify({'fruit': 'apple'})
+    return 'test'
