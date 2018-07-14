@@ -10,7 +10,9 @@ from . import JWT_authentication_BP
 def test():
     return jsonify({'fruit': 'apple'})
 
+
 from flask_restful import Resource
+
 
 class UserRegistration(Resource):
     def post(self):
